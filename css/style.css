@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Sunflower:300,500,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container-min {
+  width: 85%;
+  margin: auto;
+}
+
+.spacer {
+  height: 100px;
+  width: 100%;
+}
+
+.spacer--min {
+  height: 50px;
+  width: 100%;
+}
+
+#nav--control {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+}
+
+#nav--control .nav--logo {
+  margin: 20px;
+  text-decoration: none;
+  float: left;
+}
+
+#nav--control .nav--logo span {
+  color: #FFF;
+  font-size: 1.9em;
+  font-family: "Lato", sans-serif;
+}
+
+#nav--control .nav--logo span:hover {
+  color: #DF2935;
+}
+
+#nav--control .nav--logo i {
+  color: #DF2935;
+}
+
+#nav--control .nav--logo i:hover {
+  color: #FFF;
+}
+
+#nav--control #nav--control--items ul {
+  margin-left: 35px;
+}
+
+#nav--control #nav--control--items ul li {
+  float: left;
+  display: inline;
+  padding: 32px 20px 15px 20px;
+}
+
+#nav--control #nav--control--items ul li:hover {
+  border-bottom: 2px solid #DF2935;
+}
+
+#nav--control #nav--control--items ul li a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-family: "Lato", sans-serif;
+}
+
+#nav--control #nav--control--items ul li a:hover {
+  color: #DF2935;
+}
+
+#nav--control #nav--control--buttons ul {
+  margin-right: 35px;
+}
+
+#nav--control #nav--control--buttons ul li {
+  float: right;
+  padding: 0 20px;
+}
+
+#nav--control #nav--control--buttons ul li button {
+  background: transparent;
+  margin-top: 25px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-size: 1em;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#nav--control #nav--control--buttons ul li button:hover {
+  background: #DF2935;
+  color: #FFF;
+  border: none;
+}
+
+#nav--control #nav--control--buttons ul li button i {
+  margin-top: 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#nav--control #nav--control--buttons ul li i {
+  padding: 0 10px;
+  font-size: 1.5em;
+  color: #FFF;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+#nav--control #nav--control--buttons ul li i:hover {
+  color: #DF2935;
+}
+
+#banner--control .banner--image img {
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+}
+
+#banner--control .banner--info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr 10fr)[1];
+      grid-template-columns: repeat(1, 1fr 10fr);
+  position: relative;
+  z-index: 1;
+  margin-top: -364px;
+}
+
+#banner--control .highlight--card {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 600px;
+  height: 100%;
+  background-color: #18262f;
+  opacity: 0.85;
+}
+
+#banner--control .highlight--card i {
+  font-size: 1.5em;
+  color: #DF2935;
+  float: right;
+  padding: 25px;
+  opacity: 2;
+}
+
+#banner--control .highlight--card h5 {
+  color: #FFF;
+  font-family: "Sunflower", sans-serif;
+  font-size: 3em;
+  padding: 90px;
+  font-weight: 300;
+  opacity: 2;
+}
+
+#banner--control .intro--card {
+  width: 776px;
+  height: 260px;
+  padding: 100px 0 0 50px;
+  background-color: #FFF;
+}
+
+#banner--control .intro--card h5 {
+  padding-left: 50px;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+#banner--control .intro--card h5 span {
+  padding-right: .5em;
+}
+
+#banner--control .intro--card p {
+  padding: 20px 300px 0 50px;
+  font-size: 1.8em;
+  font-family: "Lato", sans-serif;
+}
+
+#banner--control .banner--change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  height: 100px;
+  background-color: #DF2935;
+}
+
+#banner--control .banner--change .banner--change--move {
+  margin: auto;
+  padding: 20px;
+}
+
+#banner--control .banner--change .banner--change--move a {
+  text-decoration: none;
+  color: #18262f;
+}
+
+#banner--control .banner--change .banner--change--move a:hover {
+  color: #FFF;
+}
+
+#banner--control .banner--change .banner--change--text {
+  margin: auto;
+  font-family: "Sunflower", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.idea--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.idea--section .idea--section--title {
+  margin: 50px;
+}
+
+.idea--section .idea--section--title p {
+  padding-left: 40px;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.idea--section .idea--section--title h1 {
+  padding: 20px 50px 0 40px;
+  font-size: 2.5em;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 700;
+}
+
+.idea--section .idea--section--title span {
+  padding-right: .5em;
+}
+
+.idea--section .idea--section--text {
+  margin: 50px;
+}
+
+.idea--section .idea--section--text p {
+  padding: 20px 0 0 50px;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.method--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.method--section .method--section--image img {
+  width: 100%;
+  height: 700px;
+}
+
+.method--section .method--section--text {
+  margin: 50px;
+  margin-top: 200px;
+}
+
+.method--section .method--section--text p {
+  padding: 20px 0 0 50px;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.method--section .method--section--text h1 {
+  padding-left: 50px;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.method--section .method--section--text h2 {
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 3em;
+  font-family: "Sunflower", sans-serif;
+}
+
+.method--section .method--section--text span {
+  padding-right: .5em;
+}
+
+.goal--section {
+  padding: 0 20%;
+}
+
+.goal--section .goal--section--title {
+  text-align: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.goal--section .goal--section--title span {
+  padding-right: .5em;
+}
+
+.goal--section .goal--section--text {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 3em;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 300;
+}
+
+.process--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.process--section .process--section--image img {
+  width: 100%;
+  height: 100%;
+}
+
+.process--section .process--section--text {
+  width: 100%;
+  height: 100px;
+}
+
+.process--section .process--section--text h1 {
+  padding: 95px;
+  padding-top: 10px;
+  font-size: 3em;
+  font-family: "Sunflower", sans-serif;
+}
+
+.process--section .process--section--text p {
+  margin-top: 90px;
+  padding-left: 95px;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.process--section .process--section--text span {
+  padding-right: .5em;
+}
+
+.proc--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.proc--section .proc--section--image img {
+  width: 100%;
+  height: 100%;
+}
+
+.proc--section .proc--section--text {
+  width: 100%;
+  height: 100px;
+}
+
+.proc--section .proc--section--text p {
+  margin: 150px 60px 0 90px;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.action--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.action--section .action--section--text h1 {
+  padding: 95px 95px 0 95px;
+  font-size: 3em;
+  font-family: "Sunflower", sans-serif;
+}
+
+.action--section .action--section--text p {
+  padding: 10px 95px 0 95px;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.action--section .action--section--text a button {
+  margin-left: 95px;
+  background: transparent;
+  margin-top: 25px;
+  padding: 10px 15px;
+  color: #18262f;
+  font-size: 1em;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.action--section .action--section--text a button:hover {
+  background: #DF2935;
+  color: #FFF;
+  border: none;
+}
+
+.action--section .action--section--image img {
+  width: 100%;
+  height: 100%;
+}
+
+.flexin--section {
+  width: 100%;
+  height: 520px;
+  background: #18262f;
+}
+
+.flexin--section .flexin--section--title #flexin--head {
+  padding-top: 100px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Sunflower", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.flexin--section .flexin--section--title #flexin--head span {
+  padding-right: .5em;
+}
+
+.flexin--section .flexin--section--title h1 {
+  padding-top: 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Sunflower", sans-serif;
+}
+
+.flexin--section .number--section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.flexin--section .number--section .number--section--code {
+  padding-top: 60px;
+  margin-right: -20px;
+}
+
+.flexin--section .number--section .number--section--code span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  color: #DF2935;
+}
+
+.flexin--section .number--section .number--section--code p {
+  color: gray;
+  padding-top: 20px;
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.flexin--section .number--section .number--section--code #number--title {
+  color: #FFF;
+}
+
+.flexin--section .number--section .number--section--cust {
+  padding-top: 60px;
+  margin-left: -90px;
+}
+
+.flexin--section .number--section .number--section--cust span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  color: #DF2935;
+}
+
+.flexin--section .number--section .number--section--cust p {
+  color: gray;
+  padding-top: 20px;
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.flexin--section .number--section .number--section--cust #number--title {
+  color: #FFF;
+}
+
+.flexin--section .number--section .gray--line {
+  border-left: 2px solid #2e4655;
+  opacity: .3;
+  height: 200px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.contact--notice {
+  text-align: center;
+  color: #18262f;
+  font-size: 2.5em;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+.contact--notice span {
+  font-weight: 700;
+}
+
+.contact--section {
+  width: 40%;
+  height: 100%;
+  background: #DF2935;
+  margin: auto;
+}
+
+.contact--section .contact--section--form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.contact--section .contact--section--form .form--section--input {
+  padding: 20px 75px;
+}
+
+.contact--section .contact--section--form .form--section--input input:focus ~ label, .contact--section .contact--section--form .form--section--input textarea:focus ~ label, .contact--section .contact--section--form .form--section--input input:valid ~ label, .contact--section .contact--section--form .form--section--input textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.contact--section .contact--section--form .form--section--input .form-group {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+.contact--section .contact--section--form .form--section--input .form-group label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-family: "Lato", sans-serif;
+}
+
+.contact--section .contact--section--form .form--section--input input, .contact--section .contact--section--form .form--section--input textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #18262f;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact--section .contact--section--form .form--section--input textarea {
+  min-height: 15em;
+}
+
+.contact--section .contact--section--form .form--section--input .btn--submit {
+  background: transparent;
+  padding: 10px 15px;
+  color: #FFF;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #FFF;
+  cursor: pointer;
+}
+
+.contact--section .contact--section--form .form--section--input .btn--submit:hover {
+  background: #FFF;
+  color: #DF2935;
+}
+
+.footer--area {
+  text-align: center;
+}
+
+.footer--area .nav--logo {
+  margin: 20px;
+  text-decoration: none;
+}
+
+.footer--area .nav--logo span {
+  color: #18262f;
+  font-size: 1.9em;
+  font-family: "Lato", sans-serif;
+}
+
+.footer--area .nav--logo span:hover {
+  color: #DF2935;
+}
+
+.footer--area .nav--logo i {
+  color: #DF2935;
+}
+
+.footer--area .nav--logo i:hover {
+  color: #FFF;
+}
+
+.footer--info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer--info p {
+  display: inline;
+  padding: 0 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer--info .dot {
+  height: 5px;
+  width: 5px;
+  background-color: #18262f;
+  display: inline-block;
+}
+
+.footer--social {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer--social i {
+  padding: 0 10px;
+  font-size: 1.3em;
+  color: #18262f;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.footer--social i:hover {
+  color: #DF2935;
+}
+/*# sourceMappingURL=style.css.map */
